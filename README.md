@@ -38,9 +38,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 This project is licensed under MIT License.
 
-
 ## Author Information
 
-[Vector](https://vector.dev/docs/) by [datalog](https://www.datadoghq.com/about/leadership/).
-
-Role by `Daimero88`.
+[Vector](https://vector.dev/docs/) by [datalog](https://www.datadoghq.com/about/leadership/).  
+Role by [Daimero88](https://github.com/Daimero88).
