@@ -53,7 +53,7 @@
     - name: Vector. Create config vector.yaml
       become: true
       ansible.builtin.template:
-        src: "template/vector/vector.yaml.j2"
+        src: "templates/vector.yaml.j2"
         dest: "/etc/vector/vector.yaml"
         mode: "0644"
         owner: root

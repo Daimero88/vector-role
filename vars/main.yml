@@ -2,3 +2,6 @@
 vector_os_arh: "x86_64"
 vector_workdir: "/tmp/vector"
 vector_data_dir: "/var/lib/vector"
+clickhouse_db: "logs_db"
+clickhouse_table: "logs_tb"
+clickhouse_url: "http://10.129.0.7:8123"
