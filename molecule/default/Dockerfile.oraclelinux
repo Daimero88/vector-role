@@ -1,8 +1,0 @@
-FROM oraclelinux:8
-
-# Установка Python 3 и необходимых пакетов
-RUN dnf install -y python3 sudo bash && \
-    dnf clean all
-
-# Настройка systemd
-CMD ["/sbin/init"]
