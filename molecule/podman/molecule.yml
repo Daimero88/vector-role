@@ -1,0 +1,29 @@
+---
+driver:
+  name: podman
+
+platforms:
+  - name: ubuntu
+    image: geerlingguy/docker-ubuntu2004-ansible
+    command: /sbin/init
+    privileged: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    tmpfs:
+      - /run
+      - /run/lock
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        ansible_user: root
+        ansible_become: true
+verifier:
+  name: ansible
+scenario:
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - destroy
