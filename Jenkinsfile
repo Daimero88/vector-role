@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'jenkins-agent'
     }
+    environment {
+        GITHUB_TOKEN = credentials('github-token')
+    }    
     stages {
         stage ('Copy Git repo') {
             steps {
