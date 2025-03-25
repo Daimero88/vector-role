@@ -10,8 +10,8 @@ platforms:
     image: geerlingguy/docker-ubuntu2004-ansible
 #    pre_build_image: true
     command: /sbin/init
-    privileged: true
-    user: root
+#   privileged: true
+#   user: root
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     tmpfs:
