@@ -35,4 +35,4 @@
       ansible.builtin.setup:
 
   roles:
-    - role: /root/vector-role
+    - role: /opt/jenkins_agent/workspace/Freestyle_job/vector-role
